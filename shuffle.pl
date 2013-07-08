@@ -14,7 +14,7 @@ pod2usage("ERROR: --data '$yaml_file' is yaml file?") unless $yaml;
 my $members = $yaml->[0]->{members};
 my $first_member = $yaml->[0]->{first_member};
 while(my @order_list = shuffle(@$members, @$members)) {
-    say join ',', @order_list;
+    say join ', ', @order_list;
     exit if $order_list[0] eq $first_member;
 }
 
