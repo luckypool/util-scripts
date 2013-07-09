@@ -8,7 +8,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.131490",
+            "generated_by" : "ExtUtils::MakeMaker version 6.42, CPAN::Meta::Converter version 2.131560",
             "license" : [
                "perl_5"
             ],
@@ -49,7 +49,7 @@
                "Dave Rolsky <autarch@urth.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.131490",
+            "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.131560",
             "license" : [
                "artistic_2"
             ],
@@ -130,7 +130,7 @@
                "Dave Rolsky <autarch@urth.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.131490",
+            "generated_by" : "Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.131560",
             "license" : [
                "perl_5"
             ],
@@ -205,23 +205,23 @@
          "target" : "Exception::Class",
          "version" : "1.37"
       },
-      "Math::Random::MT" : {
-         "dist" : "Math-Random-MT-1.16",
+      "List::MoreUtils" : {
+         "dist" : "List-MoreUtils-0.33",
          "mymeta" : {
-            "abstract" : "The Mersenne Twister PRNG",
+            "abstract" : "Provide the stuff missing in List::Util",
             "author" : [
-               "Abhijit Menon-Sen"
+               "Tassilo von Parseval <tassilo.von.parseval@rwth-aachen.de>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.131490",
+            "generated_by" : "ExtUtils::MakeMaker version 6.56, CPAN::Meta::Converter version 2.131560",
             "license" : [
-               "bsd"
+               "perl_5"
             ],
             "meta-spec" : {
                "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
                "version" : "2"
             },
-            "name" : "Math-Random-MT",
+            "name" : "List-MoreUtils",
             "no_index" : {
                "directory" : [
                   "t",
@@ -231,34 +231,35 @@
             "prereqs" : {
                "build" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
+                     "Test::More" : "0.42"
                   }
                },
                "configure" : {
                   "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
+                     "ExtUtils::CBuilder" : "0.27",
+                     "ExtUtils::MakeMaker" : "6.52"
                   }
                },
                "runtime" : {
                   "requires" : {
-                     "Test::More" : "0",
-                     "Test::Number::Delta" : "0"
+                     "Test::More" : "0.82",
+                     "perl" : "5.00503"
                   }
                }
             },
             "release_status" : "stable",
-            "version" : "1.16"
+            "version" : "0.33"
          },
-         "name" : "Math::Random::MT",
-         "pathname" : "F/FA/FANGLY/Math-Random-MT-1.16.tar.gz",
+         "name" : "List::MoreUtils",
+         "pathname" : "A/AD/ADAMK/List-MoreUtils-0.33.tar.gz",
          "provides" : {
-            "Math::Random::MT" : {
-               "file" : "Math/Random/MT.pm",
-               "version" : "1.16"
+            "List::MoreUtils" : {
+               "file" : "List/MoreUtils.pm",
+               "version" : "0.33"
             }
          },
-         "target" : "Math::Random::MT",
-         "version" : "1.16"
+         "target" : "List::MoreUtils",
+         "version" : "0.33"
       },
       "Math::Random::MT::Auto" : {
          "dist" : "Math-Random-MT-Auto-6.22",
@@ -268,7 +269,7 @@
                "Jerry D. Hedden <jdhedden AT cpan DOT org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.131490",
+            "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921, CPAN::Meta::Converter version 2.131560",
             "license" : [
                "unrestricted"
             ],
@@ -336,7 +337,7 @@
                "Jerry D. Hedden <jdhedden AT cpan DOT org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.131490",
+            "generated_by" : "Module::Build version 0.4005, CPAN::Meta::Converter version 2.131560",
             "license" : [
                "perl_5"
             ],
@@ -377,7 +378,7 @@
                      "Config" : "0",
                      "Data::Dumper" : "0",
                      "Exception::Class" : "1.22",
-                     "Scalar::Util" : "1.23",
+                     "Scalar::Util" : "1.25",
                      "attributes" : "0",
                      "overload" : "0",
                      "perl" : "v5.6.0",
@@ -424,58 +425,6 @@
          "target" : "Object::InsideOut",
          "version" : "3.97"
       },
-      "Test::Number::Delta" : {
-         "dist" : "Test-Number-Delta-1.03",
-         "mymeta" : {
-            "abstract" : "Compare the difference between numbers against a given tolerance",
-            "author" : [
-               "David A. Golden <dagolden@cpan.org>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.131490",
-            "license" : [
-               "perl_5"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Test-Number-Delta",
-            "prereqs" : {
-               "runtime" : {
-                  "requires" : {
-                     "Test::Builder" : "0.32",
-                     "Test::Builder::Tester" : "1.02",
-                     "Test::More" : "0.45",
-                     "perl" : "5.004"
-                  }
-               }
-            },
-            "provides" : {
-               "Test::Number::Delta" : {
-                  "file" : "lib/Test/Number/Delta.pm",
-                  "version" : "1.03"
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "license" : [
-                  "http://dev.perl.org/licenses/"
-               ]
-            },
-            "version" : "1.03"
-         },
-         "name" : "Test::Number::Delta",
-         "pathname" : "D/DA/DAGOLDEN/Test-Number-Delta-1.03.tar.gz",
-         "provides" : {
-            "Test::Number::Delta" : {
-               "file" : "Test/Number/Delta.pm",
-               "version" : "1.03"
-            }
-         },
-         "target" : "Test::Number::Delta",
-         "version" : "1.03"
-      },
       "YAML::Tiny" : {
          "dist" : "YAML-Tiny-1.51",
          "mymeta" : {
@@ -484,7 +433,7 @@
                "Adam Kennedy <adamk@cpan.org>"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.131490",
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.131560",
             "license" : [
                "perl_5"
             ],
@@ -547,7 +496,7 @@
                "unknown"
             ],
             "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.131490",
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.131560",
             "license" : [
                "unknown"
             ],
